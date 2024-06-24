@@ -1,0 +1,28 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+    
+  "name": "N'ko",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Integrated Keyboard for Mandenka Languages of N’Ko",
+  "icons": {
+      "128": "128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "input"
+  ],
+  "input_components": [
+    {
+      "name": "ߒߞߏ",
+      "type": "ime",
+      "id": "nkoo",
+	  "direction":"rtl",
+      "description": "Integrated Keyboard for Mandenka Languages of N’Ko",  // user visible description
+      "language": "nqo",  // The primary language this IME is used for
+      "layouts": ["us(altgr-intl)"]
+    }
+  ]
+}
